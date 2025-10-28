@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buggy Page</title>
+    <style>
+        .container {
+            background-color: #f0f0f0;
+            padding: 20px;
+            color: #333;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            display: block;
+            align-items: center;
+        }
+</style>
+</head>
+<body>
+    <h1>Welcome to My Buggy Page</h1>
+
+    <p id="intro">This page has bugs.</p>
+
+    <img src="https://pixabay.com/photos/duck-nature-bird-waterfowl-plumage-9868154/" alt="Sample Image" width="300" height="200">
+    <div class="container">
+        <button onclick="showAlert()">Click Me</button>
+    </div>
+
+    <footer>
+        <p>Contact us at <a href="mailto:info@example.com">info@example.com</a></p>
+    </footer>
+
+    <script>
+        function showAlert() {
+            alert("Button clicked!");
+        }
+
+        document.getElementById("intro").addEventListener("click", function() {
+            console.log("Intro paragraph clicked.");
+        });
+    </script>
+</body>
+</html>
